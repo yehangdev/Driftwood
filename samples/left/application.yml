@@ -1,0 +1,24 @@
+application:
+  name: order-service
+  region: west
+
+server:
+  host: localhost
+  port: 8080
+  timeout: 30
+
+feature:
+  newCheckout: false
+  oldCheckout: true
+
+service:
+  instances:
+    - id: alpha
+      weight: 10
+    - id: beta
+      weight: 20
+  token: local-value
+
+metrics:
+  enabled: true
+  sampleRate: 0.5

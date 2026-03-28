@@ -1,0 +1,32 @@
+{
+  "application": {
+    "name": "order-service",
+    "region": "east"
+  },
+  "server": {
+    "host": "service.internal",
+    "port": 9090,
+    "timeout": 45
+  },
+  "feature": {
+    "newCheckout": true,
+    "oldCheckout": false
+  },
+  "service": {
+    "instances": [
+      {
+        "id": "beta",
+        "weight": 20
+      },
+      {
+        "id": "alpha",
+        "weight": 10
+      }
+    ],
+    "token": "remote-value"
+  },
+  "metrics": {
+    "enabled": true,
+    "sampleRate": 0.75
+  }
+}
