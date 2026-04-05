@@ -1,0 +1,15 @@
+required:
+  - application.name
+  - server.port
+  - service.instances
+
+types:
+  application.name: string
+  server.port: integer
+  server.host: string
+  feature.newCheckout: boolean
+  service.instances: array
+  metrics.enabled: boolean
+
+arrays:
+  service.instances: unordered

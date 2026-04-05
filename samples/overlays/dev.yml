@@ -1,0 +1,5 @@
+server:
+  host: dev.internal
+  timeout: 60
+feature:
+  newCheckout: true
