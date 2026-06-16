@@ -6,8 +6,8 @@
 
 ## 功能
 
-- schema required、types 和 arrays
-- overlay 与 profile
+- 文本、JSON 和 Markdown 报告
+- 稳定退出码
 
 ## 构建
 
